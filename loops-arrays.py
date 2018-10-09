@@ -123,6 +123,7 @@ while i <+ 100:
 print(impares)
 print(pares)
 '''
+'''
 i = 1
 print("escribe un numero")
 j = 0
@@ -137,3 +138,10 @@ while i <= 100:
 	i += 1
 print(k)
 print(j)
+'''
+
+i = 0
+lista = ["juan","jose","maria","javier","mario","alejandra","ana","pablo","joaquin","daniel","salvador","fabs","andrea","grecia","saul","alejandro","paola","paul","hector","julio"]
+while i < 20:
+	print(lista[i])
+	i += 1
