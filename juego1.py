@@ -1,5 +1,5 @@
 import random
-intentos = [0]
+veces = [0]
 numero = random.randint(1,100)
 print(numero)
 num = 1
@@ -11,7 +11,7 @@ while num >= 1 and num <= 100 and i < 1:
 	print("adivina el numero")
 	num = int(input())
 	if num != numero:
-		intentos.append(num)
+		veces.append(num)
 		actual = numero - num
 		if abs(actual) <= 10:
 			print("warm!")
@@ -20,13 +20,13 @@ while num >= 1 and num <= 100 and i < 1:
 		i =+ 1 
 	else: 
 		print("correcto")
-		print("lo intentaste: ", len(intentos), "intentos")
+		print("lo intentaste: ", len(veces), "veces")
 		break	
 while num >= 1 and num <= 100:	
 	print("adivina el numero")
 	num = int(input())
 	if num != numero:
-		intentos.append(num)
+		veces.append(num)
 		prev = actual
 		actual = abs(numero - num)
 		if actual < prev:
@@ -35,6 +35,6 @@ while num >= 1 and num <= 100:
 			print("colder!") 
 	else: 
 		print("correcto")
-		print("lo intentaste: ", len(intentos), "intentos") 
+		print("lo intentaste: ", len(veces), "veces")
 		break	
 	
